@@ -134,3 +134,7 @@ a.custom-card:hover {
     text-align: center;
   }
 }
+
+.prod-price {
+  font-size: 24px;
+}

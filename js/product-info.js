@@ -11,6 +11,14 @@ document.addEventListener("DOMContentLoaded", function(e){
     getJSONData(PRODUCT_INFO_URL).then(function(resultObj){
         if (resultObj.status === "ok")
         {
+           product = resultObj.data;
+           
+            let productNameHTML = document.getElementById("productName");
+            productNameHTML.innerHTML = product.name;
+
+            let productDescriptionHTML = document.getElementById("productDescription");
+            productDescriptionHTML.innerHTML = product.description;
+// continuar
         }
     });
 });
